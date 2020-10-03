@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+  </head>
+  <body>
+    <script>
+      // Prototype - simple reference to another object
+      // Constructor Function
+      function Todo(name, completed) {
+        this.name = name;
+        this.completed = completed;
+      }
+
+      Todo.prototype.getTodoName = function() {
+        console.log(this.name);
+      };
+
+      const todo = new Todo("Buy Eggs", false);
+      const todo2 = new Todo("Do my homework", false);
+      todo.getTodoName();
+      console.log(todo, todo2);
+
+
+      // 
+      // const name = "deved";
+
+      // const objName = new String("hellothere");
+
+      // console.log(objName);
+
+      const name = "deved";
+
+      const upper = name.toUpperCase();
+
+      console.log(typeof upper);
+
+
+
+
+
+    </script>
+  </body>
+</h
